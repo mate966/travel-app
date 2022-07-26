@@ -1,0 +1,16 @@
+.socials {
+    margin: 0 82px 5px 105px;
+
+    .social {
+        margin: 0 10px;
+        transition: $time;
+
+        &:hover {
+            color: $color-purple;
+        }
+
+        i {
+            font-size: 18px;
+        }
+    }
+}

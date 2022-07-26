@@ -1,0 +1,34 @@
+.menu {
+    @include flex(row, space-between, center);
+    margin-bottom: 9px;
+
+    &__item {
+        @include font-size(18, 30);
+        position: relative;
+        margin: 0 25.5px;
+        font-weight: 600;
+        color: $color-blue-dark;
+        overflow: hidden;
+        transition: $time;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $color-purple;
+            transform: translateX(-101%);
+            transition: $time;
+        }
+
+        &:hover {
+            color: $color-purple;
+
+            &::after {
+                transform: translateX(0);
+            }
+        }
+    }
+}

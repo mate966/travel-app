@@ -1,0 +1,12 @@
+.nav {
+    height: 110px;
+
+    &__container {
+        @include flex(row, space-between, center);
+        height: 100%
+    }
+
+    &__right {
+        @include flex(row, space-between, center);
+    }
+}
